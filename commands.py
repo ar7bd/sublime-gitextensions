@@ -78,6 +78,11 @@ class GitExCheckoutrevision(GitExCommand):
       call(["gitex.cmd", "checkoutrevision"], shell=True)
 
 
+class GitExDiffTool(GitExFileCommand):
+    def call(self, path):
+      call(["gitex.cmd", "difftool", path], shell=True)
+
+
 class GitExFileHistory(GitExFileCommand):
     def call(self, path):
       call(["gitex.cmd", "filehistory", path], shell=True)

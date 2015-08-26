@@ -24,6 +24,9 @@
         }, {
               "caption": "-"
         }, {
+              "caption": "Diff Tool",
+              "command": "git_ex_diff_tool"
+        }, {
               "caption": "File History",
               "command": "git_ex_file_history"
         }, {
