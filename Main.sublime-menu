@@ -10,6 +10,9 @@
         }, {
               "caption": "-"
         }, {
+              "caption": "Browse",
+              "command": "git_ex_browse"
+        }, {
               "caption": "Commit",
               "command": "git_ex_commit"
         }, {
@@ -21,14 +24,28 @@
         }, {
               "caption": "-"
         }, {
+              "caption": "File History",
+              "command": "git_ex_file_history"
+        }, {
+              "caption": "Blame",
+              "command": "git_ex_blame"
+        }, {
               "caption": "Create Branch",
               "command": "git_ex_branch"
         }, {
               "caption": "Checkout Branch",
               "command": "git_ex_checkoutbranch"
         }, {
-              "caption": "Blame",
-              "command": "git_ex_blame"
+              "caption": "Checkout Revision",
+              "command": "git_ex_checkoutrevision"
+        }, {
+              "caption": "Create Tag",
+              "command": "git_ex_tag"
+        }, {
+              "caption": "-"
+        }, {
+              "caption": "Settings",
+              "command": "git_ex_settings"
         }, {
               "caption": "About",
               "command": "git_ex_about"

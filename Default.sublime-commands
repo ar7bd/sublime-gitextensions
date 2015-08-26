@@ -15,8 +15,14 @@
         "caption": "GitExtension: Checkout Branch",
         "command": "git_ex_checkoutbranch"
     }, {
+        "caption": "GitExtension: Checkout Revision",
+        "command": "git_ex_checkoutrevision"
+    }, {
         "caption": "GitExtension: Commit",
         "command": "git_ex_commit"
+    }, {
+        "caption": "GitExtension: File History",
+        "command": "git_ex_file_history"
     }, {
         "caption": "GitExtension: Init",
         "command": "git_ex_init"
@@ -26,5 +32,11 @@
     }, {
         "caption": "GitExtension: Push",
         "command": "git_ex_push"
+    }, {
+        "caption": "GitExtension: Create Tag",
+        "command": "git_ex_tag"
+    }, {
+        "caption": "GitExtension: Settings",
+        "command": "git_ex_settings"
     }
 ]

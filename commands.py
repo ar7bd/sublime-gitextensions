@@ -73,6 +73,16 @@ class GitExCheckoutbranch(GitExCommand):
       call(["gitex.cmd", "checkoutbranch"], shell=True)
 
 
+class GitExCheckoutrevision(GitExCommand):
+    def call(self, path):
+      call(["gitex.cmd", "checkoutrevision"], shell=True)
+
+
+class GitExFileHistory(GitExFileCommand):
+    def call(self, path):
+      call(["gitex.cmd", "filehistory", path], shell=True)
+
+
 class GitExInit(GitExCommand):
     def call(self, path):
       call(["gitex.cmd", "init", path], shell=True)
@@ -86,3 +96,13 @@ class GitExPull(GitExCommand):
 class GitExPush(GitExCommand):
     def call(self, path):
       call(["gitex.cmd", "push"], shell=True)
+
+
+class GitExSettings(GitExCommand):
+    def call(self, path):
+      call(["gitex.cmd", "settings"], shell=True)
+
+
+class GitExTag(GitExCommand):
+    def call(self, path):
+      call(["gitex.cmd", "tag"], shell=True)
