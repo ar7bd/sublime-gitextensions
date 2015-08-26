@@ -53,6 +53,11 @@ class GitExBlame(GitExFileCommand):
       call(["gitex.cmd", "blame", path], shell=True)
 
 
+class GitExBranch(GitExCommand):
+    def call(self, path):
+      call(["gitex.cmd", "branch"], shell=True)
+
+
 class GitExBrowse(GitExCommand):
     def call(self, path):
       call(["gitex.cmd", "browse"], shell=True)
@@ -61,6 +66,11 @@ class GitExBrowse(GitExCommand):
 class GitExCommit(GitExCommand):
     def call(self, path):
       call(["gitex.cmd", "commit"], shell=True)
+
+
+class GitExCheckoutbranch(GitExCommand):
+    def call(self, path):
+      call(["gitex.cmd", "checkoutbranch"], shell=True)
 
 
 class GitExInit(GitExCommand):

@@ -21,6 +21,12 @@
         }, {
               "caption": "-"
         }, {
+              "caption": "Create Branch",
+              "command": "git_ex_branch"
+        }, {
+              "caption": "Checkout Branch",
+              "command": "git_ex_checkoutbranch"
+        }, {
               "caption": "Blame",
               "command": "git_ex_blame"
         }, {

@@ -9,6 +9,12 @@
         "caption": "GitExtension: Browse",
         "command": "git_ex_browse"
     }, {
+        "caption": "GitExtension: Create Branch",
+        "command": "git_ex_branch"
+    }, {
+        "caption": "GitExtension: Checkout Branch",
+        "command": "git_ex_checkoutbranch"
+    }, {
         "caption": "GitExtension: Commit",
         "command": "git_ex_commit"
     }, {
