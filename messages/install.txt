@@ -1,0 +1,3 @@
+Sublime GitExtensions
+-------------------------------
+This Sublime Text plugin provides an interface to Git Extensions.

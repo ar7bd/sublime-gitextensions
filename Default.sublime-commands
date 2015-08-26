@@ -1,0 +1,24 @@
+[
+    {
+        "caption": "GitExtension: About",
+        "command": "git_ex_about"
+    }, {
+        "caption": "GitExtension: Blame",
+        "command": "git_ex_blame"
+    }, {
+        "caption": "GitExtension: Browse",
+        "command": "git_ex_browse"
+    }, {
+        "caption": "GitExtension: Commit",
+        "command": "git_ex_commit"
+    }, {
+        "caption": "GitExtension: Init",
+        "command": "git_ex_init"
+    }, {
+        "caption": "GitExtension: Pull",
+        "command": "git_ex_pull"
+    }, {
+        "caption": "GitExtension: Push",
+        "command": "git_ex_push"
+    }
+]
