@@ -71,7 +71,7 @@ class GitExFileCommand(GitExHelper, sublime_plugin.TextCommand):
 
 class GitExAbout(GitExCommand):
     def execute(self, path):
-        call(["gitex.cmd", "about"], shell=True)
+        call(["gitex", "about"], shell=True)
 
     def is_enabled(self):
         return True
@@ -79,48 +79,48 @@ class GitExAbout(GitExCommand):
 
 class GitExBlame(GitExFileCommand):
     def execute(self, path):
-        call(["gitex.cmd", "blame", path], shell=True)
+        call(["gitex", "blame", path], shell=True)
 
 
 class GitExBranch(GitExCommand):
     def execute(self, path):
-        call(["gitex.cmd", "branch"], shell=True)
+        call(["gitex", "branch"], shell=True)
 
 
 class GitExBrowse(GitExCommand):
     def execute(self, path):
-        call(["gitex.cmd", "browse"], shell=True)
+        call(["gitex", "browse"], shell=True)
 
 
 class GitExCommit(GitExCommand):
     def execute(self, path):
-        call(["gitex.cmd", "commit"], shell=True)
+        call(["gitex", "commit"], shell=True)
 
 
 class GitExCheckoutbranch(GitExCommand):
     def execute(self, path):
-        call(["gitex.cmd", "checkoutbranch"], shell=True)
+        call(["gitex", "checkoutbranch"], shell=True)
 
 
 class GitExCheckoutrevision(GitExCommand):
     def execute(self, path):
-        call(["gitex.cmd", "checkoutrevision"], shell=True)
+        call(["gitex", "checkoutrevision"], shell=True)
 
 
 class GitExDiffTool(GitExFileCommand):
     def execute(self, path):
-        call(["gitex.cmd", "difftool", path], shell=True)
+        call(["gitex", "difftool", path], shell=True)
 
 
 class GitExFileHistory(GitExFileCommand):
     def execute(self, path):
-        call(["gitex.cmd", "filehistory", path], shell=True)
+        call(["gitex", "filehistory", path], shell=True)
 
 
 class GitExInit(GitExCommand):
     def execute(self, path):
         print(path);
-        call(["gitex.cmd", "init", path], shell=True)
+        call(["gitex", "init", path], shell=True)
 
     def is_enabled(self):
         path = self.get_path();
@@ -132,17 +132,17 @@ class GitExInit(GitExCommand):
 
 class GitExPull(GitExCommand):
     def execute(self, path):
-        call(["gitex.cmd", "pull"], shell=True)
+        call(["gitex", "pull"], shell=True)
 
 
 class GitExPush(GitExCommand):
     def execute(self, path):
-        call(["gitex.cmd", "push"], shell=True)
+        call(["gitex", "push"], shell=True)
 
 
 class GitExSettings(GitExCommand):
     def execute(self, path):
-        call(["gitex.cmd", "settings"], shell=True)
+        call(["gitex", "settings"], shell=True)
 
     def is_enabled(self):
         return True
@@ -150,4 +150,4 @@ class GitExSettings(GitExCommand):
 
 class GitExTag(GitExCommand):
     def execute(self, path):
-        call(["gitex.cmd", "tag"], shell=True)
+        call(["gitex", "tag"], shell=True)
