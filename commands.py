@@ -35,14 +35,34 @@ class GitExHelper():
 
         return GitDirectoryCache.is_git(path)
 
-    # Call gitex with the given parameters.
-    #
-    # Example:
-    #   self.gitex("about")
+    '''
+    Call gitex with the given parameters.
+
+    Example:
+      self.gitex("about")
+    '''
     def gitex(self, *arguments):
+        gitex_command = GitExHelper.gitex_command()
+        if gitex_command is None:
+            print("Error: Could not find gitex command. ")
+            return
         arguments = list(arguments)
-        arguments.insert(0, "gitex")
+        arguments = gitex_command + arguments
         call(arguments, shell=True)
+
+    '''
+    Returns the GitExt command as array or None.
+    '''
+    @classmethod
+    def gitex_command(cls):
+        settings = sublime.load_settings("GitExtensions.sublime-settings")
+        gitex_command = []
+        gitex_command_settings = settings.get("gitex_command", {})
+        if sublime.platform() in gitex_command_settings:
+            gitex_command = gitex_command_settings[sublime.platform()]
+        if len(gitex_command) == 0:
+            return None
+        return gitex_command
 
 
 class GitExCommand(GitExHelper, sublime_plugin.WindowCommand):
@@ -160,3 +180,8 @@ class GitExSettings(GitExCommand):
 class GitExTag(GitExCommand):
     def execute(self, path):
         self.gitex("tag")
+
+
+class GitExRemotes(GitExCommand):
+    def execute(self, path):
+        self.gitex("remotes")

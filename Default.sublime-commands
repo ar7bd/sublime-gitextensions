@@ -36,6 +36,9 @@
         "caption": "GitExtension: Push",
         "command": "git_ex_push"
     }, {
+        "caption": "GitExtension: Remotes",
+        "command": "git_ex_remotes"
+    }, {
         "caption": "GitExtension: Create Tag",
         "command": "git_ex_tag"
     }, {

@@ -1,0 +1,7 @@
+{
+  "gitex_command": {
+    "osx": ["gitex"],
+    "linux": ["gitex"],
+    "windows": ["gitex"]
+  }
+}

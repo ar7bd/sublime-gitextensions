@@ -1,57 +1,116 @@
-[{
+[
+  {
     "caption": "Tools",
     "id": "tools",
-    "children": [{
+    "children": [
+      {
         "caption": "GitExtensions",
         "id": "git_extensions",
-        "children": [{
-              "caption": "Init",
-              "command": "git_ex_init"
-        }, {
-              "caption": "-"
-        }, {
-              "caption": "Browse",
-              "command": "git_ex_browse"
-        }, {
-              "caption": "Commit",
-              "command": "git_ex_commit"
-        }, {
-              "caption": "Push",
-              "command": "git_ex_push"
-        }, {
-              "caption": "Pull",
-              "command": "git_ex_pull"
-        }, {
-              "caption": "-"
-        }, {
-              "caption": "Diff Tool",
-              "command": "git_ex_diff_tool"
-        }, {
-              "caption": "File History",
-              "command": "git_ex_file_history"
-        }, {
-              "caption": "Blame",
-              "command": "git_ex_blame"
-        }, {
-              "caption": "Create Branch",
-              "command": "git_ex_branch"
-        }, {
-              "caption": "Checkout Branch",
-              "command": "git_ex_checkoutbranch"
-        }, {
-              "caption": "Checkout Revision",
-              "command": "git_ex_checkoutrevision"
-        }, {
-              "caption": "Create Tag",
-              "command": "git_ex_tag"
-        }, {
-              "caption": "-"
-        }, {
-              "caption": "Settings",
-              "command": "git_ex_settings"
-        }, {
-              "caption": "About",
-              "command": "git_ex_about"
-        }]
-    }]
-}]
+        "children": [
+          {
+            "caption": "Init",
+            "command": "git_ex_init"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "caption": "Browse",
+            "command": "git_ex_browse"
+          },
+          {
+            "caption": "Commit",
+            "command": "git_ex_commit"
+          },
+          {
+            "caption": "Push",
+            "command": "git_ex_push"
+          },
+          {
+            "caption": "Pull",
+            "command": "git_ex_pull"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "caption": "Diff Tool",
+            "command": "git_ex_diff_tool"
+          },
+          {
+            "caption": "File History",
+            "command": "git_ex_file_history"
+          },
+          {
+            "caption": "Blame",
+            "command": "git_ex_blame"
+          },
+          {
+            "caption": "Create Branch",
+            "command": "git_ex_branch"
+          },
+          {
+            "caption": "Checkout Branch",
+            "command": "git_ex_checkoutbranch"
+          },
+          {
+            "caption": "Checkout Revision",
+            "command": "git_ex_checkoutrevision"
+          },
+          {
+            "caption": "Create Tag",
+            "command": "git_ex_tag"
+          },
+          {
+            "caption": "Remote Repositories",
+            "command": "git_ex_remotes"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "caption": "Settings",
+            "command": "git_ex_settings"
+          },
+          {
+            "caption": "About",
+            "command": "git_ex_about"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "caption": "Preferences",
+    "mnemonic": "n",
+    "id": "preferences",
+    "children": [
+      {
+        "caption": "Package Settings",
+        "mnemonic": "P",
+        "id": "package-settings",
+        "children": [
+          {
+            "caption": "GitExtensions",
+            "children": [
+              {
+                "command": "open_file",
+                "args": {
+                  "file": "${packages}/GitExtensions/GitExtensions.sublime-settings"
+                },
+                "caption": "Settings – Default"
+              },
+              {
+                "command": "open_file",
+                "args": {
+                  "file": "${packages}/User/GitExtensions.sublime-settings"
+                },
+                "caption": "Settings – User"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
