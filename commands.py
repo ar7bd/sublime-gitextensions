@@ -3,7 +3,7 @@ import sublime
 
 import os
 import time
-from subprocess import call
+import subprocess
 
 class GitDirectoryCache(object):
     '''
@@ -56,7 +56,7 @@ class GitExHelper():
             return
         arguments = list(arguments)
         arguments = gitex_command + arguments
-        call(arguments, shell=True)
+        subprocess.Popen(arguments)
 
     @classmethod
     def gitex_command(cls):
