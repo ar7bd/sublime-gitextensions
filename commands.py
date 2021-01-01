@@ -4,6 +4,7 @@ import sublime
 import os
 import time
 import subprocess
+import shutil
 
 class GitDirectoryCache(object):
     '''
@@ -68,6 +69,7 @@ class GitExHelper():
         gitex_command_settings = settings.get("gitex_command", {})
         if sublime.platform() in gitex_command_settings:
             gitex_command = gitex_command_settings[sublime.platform()]
+            gitex_command[0] = shutil.which(gitex_command[0])
         if len(gitex_command) == 0:
             return None
         return gitex_command
