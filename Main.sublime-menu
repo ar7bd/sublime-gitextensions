@@ -94,18 +94,16 @@
             "caption": "GitExtensions",
             "children": [
               {
-                "command": "open_file",
-                "args": {
+                "caption": "Settings – Default",
+                "command": "open_file", "args": {
                   "file": "${packages}/GitExtensions/GitExtensions.sublime-settings"
-                },
-                "caption": "Settings – Default"
+                }
               },
               {
-                "command": "open_file",
-                "args": {
+                "caption": "Settings – User",
+                "command": "open_file", "args": {
                   "file": "${packages}/User/GitExtensions.sublime-settings"
-                },
-                "caption": "Settings – User"
+                }
               }
             ]
           }
